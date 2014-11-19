@@ -1,7 +1,7 @@
   case estado_inicial:           //Estado estacionario; aguarda a entrada de uma das senhas
     Cofre.acende_led(LED_R);     //O LED vermelho fica aceso durante o tempo em que o cofre fica trancado
     chave_ativada = Cofre.leia_chave();			//Funcao criada na biblioteca customizada, a fim de ler se alguma chave foi ativada;
-   												                  //caso contrario, retorna 0 (vide arquivo da biblioteca)
+    //caso contrario, retorna 0 (vide arquivo da biblioteca)
     cont = -1;		//Inicia-se cont com -1	
 
     if(senha[0] != senha_m[0]) cont = 0;      //Armazenamento do estado em que a senha comecou a diferir da senha mestra
