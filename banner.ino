@@ -30,8 +30,8 @@ case estado_inicial:           //Estado estacionario; aguarda a entrada de uma d
         Cofre.acende_led(LED_B);
         Serial.println("Senha errada");
         delay(trans);
-        currentState = Cofre.senha_errada(currentState);		//O estado senha errada foi movido para a biblioteca por conveniencia,
-      }													              	            //Simplificando o uso e podendo ser usado como um 'estado multiplo'
+        currentState = Cofre.senha_errada(currentState);    //O estado senha errada foi movido para a biblioteca por conveniencia,
+      }                                                     //Simplificando o uso e podendo ser usado como um 'estado multiplo'
     }
   }
   break;
